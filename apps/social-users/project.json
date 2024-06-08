@@ -1,0 +1,24 @@
+{
+  "name": "social-users",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/social-users/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "social-users:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "social-users:build:development"
+        },
+        "production": {
+          "buildTarget": "social-users:build:production"
+        }
+      }
+    }
+  }
+}

@@ -34,7 +34,13 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/social-hrm-e2e/**/*"]
+      "exclude": [
+        "social/gateway-e2e/**/*",
+        "apps/social/gateway-e2e/**/*",
+        "apps/social-gateway-e2e/**/*",
+        "apps/social-users-e2e/**/*",
+        "apps/social-notifications-e2e/**/*"
+      ]
     }
   ],
   "nxCloudAccessToken": "NjA5ZDNjOWUtNjIxMC00MGRmLWE5ZDktODQ0ZDhkYmIxYTI2fHJlYWQtd3JpdGU="
